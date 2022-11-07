@@ -50,10 +50,10 @@ const Task: React.FC<TaskProps> = ({ taskDetails }) => {
     <div className="task-container">
       <h3>{title}</h3>
       <div className="subtask-container subtask-grid-container">
-        <div className="grid-item completed-sub-heading">
+        <div className="grid-item pending-sub-heading">
           <h4>Not yet completed</h4>
         </div>
-        <div className="grid-item completed-list">
+        <div className="grid-item pending-list">
           <ul>
             {getPending(subtasks).map((subtitle) => (
               <li
@@ -67,10 +67,10 @@ const Task: React.FC<TaskProps> = ({ taskDetails }) => {
             ))}
           </ul>
         </div>
-        <div className="grid-item pending-sub-heading">
+        <div className="grid-item completed-sub-heading">
           <h4>Completed</h4>
         </div>
-        <div className="grid-item pending-list">
+        <div className="grid-item completed-list">
           <ul>
             {getCompleted(subtasks).map((subtitle) => (
               <li

@@ -19,7 +19,13 @@
 }
 
 .completed-list {
+  color: green;
+}
+
+.pending-list {
+  color: orange;
   grid-row-start: 2;
+  grid-column-start: 1;
 }
 
 .grid-item {
