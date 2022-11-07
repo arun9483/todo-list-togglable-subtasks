@@ -1,0 +1,36 @@
+.task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin-bottom: 40px;
+  padding: 40px;
+  background-color: white;
+}
+
+.subtask-grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-self: space-around;
+}
+
+.completed-list {
+  grid-row-start: 2;
+}
+
+.grid-item {
+  align-self: start;
+  justify-self: start;
+}
+
+ul {
+  padding: 0;
+}
+
+.grid-item li {
+  cursor: pointer;
+}

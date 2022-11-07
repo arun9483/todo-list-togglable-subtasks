@@ -1,6 +1,7 @@
 import React from 'react';
 import { ITaskList } from './types';
 import Task from './Task';
+import './TaskList.css';
 
 const taskList: ITaskList = {
   'Organize closet': [
